@@ -1,3 +1,9 @@
+# revision 23427
+# category Package
+# catalog-ctan /macros/latex/contrib/beamer-contrib/beameraudience
+# catalog-date 2011-08-05 01:50:01 +0200
+# catalog-license lppl
+# catalog-version 0.1
 Name:		texlive-beameraudience
 Version:	0.1
 Release:	1
@@ -38,6 +44,7 @@ according to a logical structure in the LaTeX source.
 %files
 %{_texmfdistdir}/tex/latex/beameraudience/beameraudience.sty
 %doc %{_texmfdistdir}/doc/latex/beameraudience/README
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -48,3 +55,5 @@ according to a logical structure in the LaTeX source.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
