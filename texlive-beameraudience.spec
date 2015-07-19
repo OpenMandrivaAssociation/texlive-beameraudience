@@ -6,7 +6,7 @@
 # catalog-version 0.1
 Name:		texlive-beameraudience
 Version:	0.1
-Release:	9
+Release:	10
 Summary:	Assembling beamer frames according to audience
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/beamer-contrib/beameraudience
