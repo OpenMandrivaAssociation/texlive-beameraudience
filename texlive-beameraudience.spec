@@ -1,18 +1,12 @@
-# revision 23427
-# category Package
-# catalog-ctan /macros/latex/contrib/beamer-contrib/beameraudience
-# catalog-date 2011-08-05 01:50:01 +0200
-# catalog-license lppl
-# catalog-version 0.1
 Name:		texlive-beameraudience
-Version:	0.1
-Release:	12
+Version:	23427
+Release:	1
 Summary:	Assembling beamer frames according to audience
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/beamer-contrib/beameraudience
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/beameraudience.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/beameraudience.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/beameraudience.r23427.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/beameraudience.doc.r23427.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,12 +19,12 @@ the frames for a specific audience while leaving their order
 according to a logical structure in the LaTeX source.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -39,25 +33,10 @@ according to a logical structure in the LaTeX source.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.1-2
-+ Revision: 749528
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.1-1
-+ Revision: 717896
-- texlive-beameraudience
-- texlive-beameraudience
-- texlive-beameraudience
-- texlive-beameraudience
-- texlive-beameraudience
-
