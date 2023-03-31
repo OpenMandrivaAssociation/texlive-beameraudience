@@ -1,6 +1,6 @@
 Name:		texlive-beameraudience
 Version:	23427
-Release:	1
+Release:	2
 Summary:	Assembling beamer frames according to audience
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/beamer-contrib/beameraudience
