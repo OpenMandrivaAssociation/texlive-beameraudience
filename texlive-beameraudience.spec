@@ -3,7 +3,7 @@ Version:	23427
 Release:	2
 Summary:	Assembling beamer frames according to audience
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/beamer-contrib/beameraudience
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/beamer-contrib/beameraudience
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/beameraudience.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/beameraudience.doc.r%{version}.tar.xz
